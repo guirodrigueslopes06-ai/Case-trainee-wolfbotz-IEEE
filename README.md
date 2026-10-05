@@ -12,10 +12,6 @@ Wolfbotz IEEE.
 - Detectar as bordas da arena e evitar sair dela.
 - Seguir trajetos determinados por linhas no chão.
 
-## Tecnologias
-- C++ / Arduino
-- Git e GitHub
-- Arduino IDE
 
 ## Estrutura do repositório
 - `src/`: códigos-fonte do robô.
