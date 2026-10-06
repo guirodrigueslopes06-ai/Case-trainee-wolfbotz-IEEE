@@ -30,7 +30,7 @@ Projetar e construir o circuito elétrico do robô, integrando os componentes el
 * Realizar a prototipagem e o projeto dos circuitos.
 * Verificar o funcionamento e a compatibilidade elétrica dos componentes.
 
-### ⚙️ Mecânica
+###  Mecânica
 
 Desenvolver a estrutura física do robô, considerando as dimensões máximas estabelecidas no projeto e os requisitos de montagem.
 
