@@ -22,7 +22,7 @@ void sensorAdversario(){
     int FRT=digitalRead(PIN_SENSORADV_FRT);
     int ESQ=digitalRead(PIN_SENSORADV_ESQ);
     int DIR=digitalRead(PIN_SENSORADV_DIR);
-    if (FRT==LOW){
+    if (FRT==DETECTADO){
          Serial.println("Adversário detectado!");
         frenteTurbo(); //para atacar o adversário
       
@@ -49,6 +49,7 @@ bool sensorDeborda(){
 void fugirBorda(){
 
     frear();
+    delay(50);
     recuar();
     delay(100);
     virarDireita();
@@ -58,7 +59,7 @@ void fugirBorda(){
 
 }
 void loop() {
-    if (sensorDeborda){
+    if (sensorDeborda()){
         fugirBorda();
     }
     else{
@@ -76,6 +77,9 @@ void virarDireita()     { Serial.println("virarDireita"); }
 void virarEsquerda()    { Serial.println("virarEsquerda"); }
 void frenteTurbo()      { Serial.println("frenteTurbo"); }
 void buscaAdversario()  { Serial.println("buscaAdversario"); }
+
+  
+
 
   
   
