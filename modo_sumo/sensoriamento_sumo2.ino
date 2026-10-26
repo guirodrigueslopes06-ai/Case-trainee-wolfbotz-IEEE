@@ -22,7 +22,7 @@ void configurarSensores_sumo() {
 }
 bool bordaEsq(){
     int BORDA_ESQ=analogRead(PIN_SENSORBORD_ESQ);
-     Serial.println(BORDA_DIR);
+     Serial.println(BORDA_ESQ);
     return (BORDA_ESQ<=LIMITE_BORDA);
 }
 bool bordaDir(){

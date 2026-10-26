@@ -5,8 +5,8 @@ void setup(){
  configurarMotores();
  configurarSensores_sumo(); 
  Serial.begin(9600);
+ delay(5000);
 }
-delay(5000);
 void loop(){
   modoSumo();
 }

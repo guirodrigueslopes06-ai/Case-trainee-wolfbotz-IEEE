@@ -88,6 +88,7 @@ digitalWrite(PIN_MOTOR_A2,LOW);
 //controlando a velocidade de buscaAdversario()
 analogWrite(velmotorE,velmin);
 analogWrite(velmotorD,velmin);
+}
 
 /*void curvaEsquerda(){
     //controle do sentido de curvaEsquerda()
