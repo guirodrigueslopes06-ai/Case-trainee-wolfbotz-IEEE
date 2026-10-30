@@ -2,14 +2,11 @@
 
 #include "pinos.h"
 
-// NALINHA = true  -> linha branca (o sensor lê valor BAIXO sobre a linha)
-// NALINHA = false -> linha preta  (o sensor lê valor ALTO sobre a linha)
+
 const bool NALINHA = true;
 const int LIMITE_BORDA = 266;
 
-// TESTELIMITE está como true mas servirá somente para testarmos se o valor do LIMITE_BORDA está correto, no fim dos testes pode só alterar pra false
-
-const bool TESTELIMITE = true;
+const bool TESTELIMITE = false;
 
 void configurarSensoresLinha(){
   //Função para realizar teste dos sensores.
