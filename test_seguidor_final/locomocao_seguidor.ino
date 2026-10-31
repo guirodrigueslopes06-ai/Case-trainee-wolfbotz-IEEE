@@ -6,6 +6,7 @@
 const int VEL_RETA = 140;
 const int VEL_CURVA_EXTERNA = 140;
 const int VEL_CURVA_INTERNA = 70;
+const int VEL_RE = 100;
 
 // Funções de movimento
 
@@ -59,6 +60,9 @@ void curvaEsq(){
 
 void curvaDir(){
   moverMotores(VEL_CURVA_EXTERNA, VEL_CURVA_INTERNA);
+}
+void recuarLinha(){
+  moverMotores(-VEL_RE, -VEL_RE);
 }
 
 void frear(){
