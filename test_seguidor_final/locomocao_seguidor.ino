@@ -64,6 +64,7 @@ void curvaDir(){
 void recuarLinha(){
   moverMotores(-VEL_RE, -VEL_RE);
   delay(2000);
+  moverMotores(0, 0);
 }
 
 void frear(){
