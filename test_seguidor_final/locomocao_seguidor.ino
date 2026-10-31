@@ -1,8 +1,6 @@
 //ESSE ARQUIVO CONTÉM A LOCOMOÇÃO DO MODO SEGUIDOR DE LINHA.
 //ESSA VERSÃO NÃO FUNCIONARÁ SE NÃO FOR INTEGRADA
 
-#include "pinos.h"
-
 //Consts de movimento
 
 const int VEL_RETA = 140;
