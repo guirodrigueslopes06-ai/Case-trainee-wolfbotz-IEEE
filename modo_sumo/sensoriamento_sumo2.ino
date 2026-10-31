@@ -11,6 +11,11 @@
 #define TX0 1 
 const int LIMITE_BORDA=266;//valor arbitrário,precisamos testar o modulo TCRT5000 para definir um limite
 #define DETECTADO LOW
+//tempos para o robo frear,recuar e girar  na função fugirBorda();
+const int temp_freio=100;
+const int temp_recuo=300;
+const int temp_giro90=400;
+const int temp_giro180=800;
 
 void configurarSensores_sumo() {
     pinMode(PIN_SENSORADV_FRT, INPUT);
@@ -33,24 +38,24 @@ bool bordaDir(){
 
 void fugirBorda(bool borda_esq,bool borda_dir){
       frear();
-    delay(500);
+    delay(temp_freio);
     recuar();
-    delay(500);
+    delay(temp_recuo);
     if (borda_esq && borda_dir){
     girarDireita();
-    delay(1000);
+    delay(temp_giro180);
     frear();
     delay(30);
     }
     else if(borda_dir){
     girarEsquerda();
-    delay(500);
+    delay(temp_giro90);
     frear();
     delay(30);
     }
     else{
     girarDireita();
-    delay(500);
+    delay(temp_giro90);
     frear();
     delay(30);
     }

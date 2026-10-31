@@ -12,7 +12,7 @@ SENTIDO HORARIO A1 E B1 E ANTI-HORARIO A2 E B2*/
 #define PIN_MOTOR_B2 13
 //variaveis da velocidade
  const int velmed=128;
-const int velmax=255;
+const int velmax=200;
 const int velmin=90; 
 //pino standby do tb6612fng
 #define PIN_STBY 6
@@ -24,7 +24,14 @@ void configurarMotores(){
   pinMode(PIN_MOTOR_A2,OUTPUT);
   pinMode(PIN_MOTOR_B2,OUTPUT);
   pinMode(PIN_STBY,OUTPUT);
-  digitalWrite(PIN_STBY,HIGH);
+  //manter o pino standby do driver desabilitado
+  digitalWrite(PIN_STBY,LOW);
+  //incializando os motores desligados 
+  digitalWrite(PIN_MOTOR_A1,LOW);
+  digitalWrite(PIN_MOTOR_B1,LOW);
+  digitalWrite(PIN_MOTOR_A2,LOW);
+  digitalWrite(PIN_MOTOR_B2,LOW);
+  
 
 }
 void frear(){
@@ -33,6 +40,9 @@ void frear(){
   digitalWrite(PIN_MOTOR_B1,HIGH);
   digitalWrite(PIN_MOTOR_A2,HIGH);
   digitalWrite(PIN_MOTOR_B2,HIGH);
+  //manter os pinos pwm em HIGH para habilitar os canais dos motores
+  analogWrite(velmotorE,255);
+  analogWrite(velmotorD,255);
 }
 void recuar(){
 //controle do sentido de recuar()
