@@ -22,6 +22,6 @@ void modoSeguidor(){
   }
   else{
     // Nenhum sensor na linha, presume-se que o robô perdeu a linha.
-    frear();
+    recuarLinha();
   }
 }
