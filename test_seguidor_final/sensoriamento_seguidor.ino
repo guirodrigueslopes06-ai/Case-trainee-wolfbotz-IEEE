@@ -1,7 +1,5 @@
 //Nessa versão adicionei o terceiro sensor que ficará no meio
 
-#include "pinos.h"
-
 
 const bool NALINHA = true;
 const int LIMITE_BORDA = 266;
