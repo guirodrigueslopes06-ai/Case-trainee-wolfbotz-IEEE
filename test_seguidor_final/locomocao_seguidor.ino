@@ -7,18 +7,6 @@ const int VEL_RETA = 140;
 const int VEL_CURVA_EXTERNA = 140;
 const int VEL_CURVA_INTERNA = 70;
 
-void configurarMotoresLinha(){
-  //Igual o void configurarMotores() do arquivo de locomoção do sumô
-  pinMode(velmotorE, OUTPUT);
-  pinMode(velmotorD, OUTPUT);
-  pinMode(PIN_MOTOR_A1, OUTPUT);
-  pinMode(PIN_MOTOR_B1, OUTPUT);
-  pinMode(PIN_MOTOR_A2, OUTPUT);
-  pinMode(PIN_MOTOR_B2, OUTPUT);
-  pinMode(PIN_STBY, OUTPUT);
-  digitalWrite(PIN_STBY, HIGH);
-}
-
 // Funções de movimento
 
 void moverMotores(int velEsq, int velDir){
