@@ -20,7 +20,7 @@
 #define RX0 0
 #define TX1 1 
 //constante de detecção de adversario
-#define DETECTADO HIGH
+#define DETECTADO LOW
 //pinos do sensor de linha 
 #define PIN_SENSORLINHA_ESQ PIN_SENSORBORD_ESQ
 #define PIN_SENSORLINHA_DIR PIN_SENSORBORD_DIR
