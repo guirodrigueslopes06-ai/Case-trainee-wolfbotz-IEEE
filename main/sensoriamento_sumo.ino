@@ -9,7 +9,8 @@ const int temp_giro90=400;
 const int temp_giro180=800;
 
 void configurarSensores_sumo() {//é como a setup desse arquivo(essas função vai ser chamada no setup do arquivo principal,para configurar os pinos dos sensores)
-    pinMode(PIN_SENSORADV_FRT, INPUT);
+    pinMode(PIN_SENSORADV_FRTE, INPUT);
+    pinMode(PIN_SENSORADV_FRTD,INPUT);
     pinMode(PIN_SENSORADV_ESQ,INPUT);
     pinMode(PIN_SENSORADV_DIR,INPUT);
     pinMode(PIN_SENSORBORD_ESQ,INPUT);
@@ -50,12 +51,13 @@ void fugirBorda(bool borda_esq,bool borda_dir){//essa função recebe os valores
     }
 }
 void sensorAdversario(){//função para detetar o adversário e executar uma determinada ação 
-    int FRT=digitalRead(PIN_SENSORADV_FRT);
+    int FRTE=digitalRead(PIN_SENSORADV_FRTE);
+    int FRTD=digitalRead(PIN_SENSORADV_FRTD);
     int ESQ=digitalRead(PIN_SENSORADV_ESQ);
     int DIR=digitalRead(PIN_SENSORADV_DIR);
   
     
-      if (FRT==DETECTADO){
+      if (FRTE==DETECTADO || FRTD==DETECTADO){
             frenteTurbo(); //para atacar o adversário
 
     }

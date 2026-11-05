@@ -10,7 +10,8 @@
 //pino standby do tb6612fng
 #define PIN_STBY 6
 //pinos do sensor do adversário
-#define PIN_SENSORADV_FRT 7
+#define PIN_SENSORADV_FRTD 7
+#define PIN_SENSORADV_FRTE 11
 #define PIN_SENSORADV_ESQ 8
 #define PIN_SENSORADV_DIR 9
 //pinos do sensor de borda 
