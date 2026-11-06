@@ -1,5 +1,6 @@
 //Os dois arquivos nessa pasta foram utilizados na integração final
 //Contém funções de movimento mais complexas para caso o seguidor perca a linha
+//Os arquivos locomocao_seguidor e modo_seguidor presentes na pasta test_seguidor_final seguem uma lógica mais simples
 
 void modoSeguidor(){
   bool esqNaLinha = linhaEsq();
