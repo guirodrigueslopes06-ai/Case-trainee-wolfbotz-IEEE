@@ -1,4 +1,5 @@
-
+//Os dois arquivos nessa pasta foram utilizados na integração final
+//Contém funções de movimento mais complexas para caso o seguidor perca a linha
 
 void modoSeguidor(){
   bool esqNaLinha = linhaEsq();
